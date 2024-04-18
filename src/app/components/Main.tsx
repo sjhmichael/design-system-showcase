@@ -6,7 +6,7 @@ import HeroImage from "./../../../public/hero-image.png";
 const Main = () => {
   return (
     <div className="w-full min-h-screen px-8">
-      <div className="h-full justify-center items-center flex pt-[184px]">
+      <div className="h-full justify-center items-center flex pt-[72px]">
         <div className="max-w-[1000px] flex flex-col text-center text-balance items-center gap-8">
           <h1 className="text-gray-100 text-5xl font-medium">
             Designs that shine with{" "}

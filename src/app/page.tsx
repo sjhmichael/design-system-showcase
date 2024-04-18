@@ -1,5 +1,4 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import StarGrid from "./components/StarGrid";
 import Main from "./components/Main";
 

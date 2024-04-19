@@ -11,7 +11,7 @@ export default function StarGrid() {
   //   gsap.registerPlugin(useGSAP);
 
   // row and columns in grid
-  const grid = [14, 30] as const;
+  const grid = [64, 64] as const;
 
   //   useGSAP(
   //     () => {
@@ -115,7 +115,8 @@ export default function StarGrid() {
       viewBox="0 0 935 425"
       className="absolute -top-14 -z-10"
       id="star-grid"
-      opacity={1}
+      width="100%"
+      opacity={0.5}
       color="#fff"
       //   ref={container}
       style={{
@@ -131,8 +132,8 @@ export default function StarGrid() {
                 fill="currentColor"
                 opacity=".2"
                 className="star-grid-item"
-                d={`M${j * 32},${
-                  i * 32 + 10
+                d={`M${j * 16},${
+                  i * 16 + 8
                 }a0.14,0.14,0,0,1,0.26,0l0.14,0.36a2.132,2.132,0,0,0,1.27,1.27l0.37,0.14a0.14,0.14,0,0,1,0,0.26l-0.37,0.14a2.132,2.132,0,0,0,-1.27,1.27l-0.14,0.37a0.14,0.14,0,0,1,-0.26,0l-0.14,-0.37a2.132,2.132,0,0,0,-1.27,-1.27l-0.36,-0.14a0.14,0.14,0,0,1,0,-0.26l0.37,-0.14a2.132,2.132,0,0,0,1.26,-1.27l0.14,-0.36z`}
               />
             );

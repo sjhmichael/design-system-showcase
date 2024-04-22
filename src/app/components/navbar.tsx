@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./../../../public/Logo.png";
+import Logo from "./../../../public/Logo.svg";
 import Image from "next/image";
 import { FaGithub, FaTwitter, FaBars, FaTimes } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ function Navbar() {
     <div className="w-full flex justify-center py-8 px-8 fixed z-10">
       <div className="py-5 px-8 rounded-lg items-center bg-gray-900 drop-shadow-lg w-fit flex flex-row flex-grow justify-between text-gray-300 content-center max-w-[1000px]">
         <div className="w-[128px]">
-          <Image src={Logo} width={128} height={128} alt="Logo" />
+          <Image src={Logo} alt="Logo" />
         </div>
         <ul className="hidden gap-10 min-[900px]:flex">
           <li>Products</li>

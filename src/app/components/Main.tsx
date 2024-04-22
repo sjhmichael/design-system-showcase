@@ -5,9 +5,9 @@ import HeroImage from "./../../../public/HeroImage.png";
 
 const Main = () => {
   return (
-    <div className="w-full px-8 h-full">
-      <div className="justify-center items-center flex pt-[172px] pb-[140px]">
-        <div className="max-w-[1000px] flex flex-col text-center text-balance items-center gap-8">
+    <div className="w-full px-8 md:mb-[128px] mb-24">
+      <div className="justify-center items-center flex pt-[172px]">
+        <div className="max-w-[1000px] flex flex-col text-center text-balance items-center space-y-8">
           {/* Title heading */}
           <h1 className="text-gray-100 text-5xl font-medium">
             Designs that shine with{" "}
@@ -24,7 +24,8 @@ const Main = () => {
           </h1>
 
           <CTAButton />
-          <div className="mt-8">
+
+          <div className="pt-8">
             <div className="glass-container">
               <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter animate-pulse" />
               <Image

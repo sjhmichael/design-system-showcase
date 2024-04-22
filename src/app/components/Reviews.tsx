@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Reviews() {
   return (
-    <div className="w-full px-8 justify-center flex md:mb-[128px] mb-24">
+    <div className="w-full px-8 justify-center flex md:mb-64 mb-24">
       <div className="h-full max-w-[1000px] text-center flex flex-col">
         {/* Header */}
         <div className="flex flex-col items-center space-y-8">
@@ -140,7 +140,7 @@ function Reviews() {
           </div>
 
           {/* 3RD GRID COL */}
-          <div className="gap-4 flex flex-col relative md:mt-16 mt-0">
+          <div className="gap-4 flex flex-col relative lg:mt-16 mt-0">
             {/* Sub grid item */}
             <div className="bg-gray-800 text-gray-300 relative flex row flex-col lg:w-fit text-balance text-left p-4 drop-shadow-md rounded-lg w-full h-fit">
               <div className="flex flex-row gap-4 items-center">

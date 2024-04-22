@@ -1,7 +1,8 @@
 import React from "react";
 import Logo from "./../../../public/Logo.svg";
 import Image from "next/image";
-import { FaGithub, FaTwitter, FaBars, FaTimes } from "react-icons/fa";
+import { FaGithub, FaBars, FaTimes } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Navbar() {
   return (
@@ -18,7 +19,7 @@ function Navbar() {
         </ul>
         <div className="flex gap-6">
           <FaGithub size={24} />
-          <FaTwitter size={24} />
+          <FaXTwitter size={24} />
           <div className="flex min-[900px]:hidden">
             <FaBars size={24} />
           </div>

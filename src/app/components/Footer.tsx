@@ -5,7 +5,7 @@ import { FaGithub, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="w-full bg-[#070815] relative justify-center flex border-t-[1px] border-slate-600 mt-24">
+    <footer className="w-full bg-[#070815] relative justify-center flex border-t-[1px] border-slate-600">
       {/* list */}
       <div className="relative flex flex-col px-8 max-w-[1000px] w-full my-8">
         <div className="relative flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between">

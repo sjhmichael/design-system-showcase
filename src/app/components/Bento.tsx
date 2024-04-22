@@ -9,8 +9,8 @@ function Bento() {
       <div className="glow absolute -z-10 aspect-square w-full max-w-xl rounded-full bg-blue-400/20 blur-3xl filter animate-pulse" />
       <div className="max-w-[1000px] content-center justify-center flex flex-col relative">
         {/* Header */}
-        <div className="text-gray-100 text-center text-balance justify-center">
-          <h1 className="text-5xl font-medium py-4">
+        <div className="text-gray-100 text-center text-balance justify-center space-y-8">
+          <h1 className="text-5xl font-medium">
             The new{" "}
             <span className="bg-gradient-to-r from-gray-100 to-yellow-500 bg-clip-text text-transparent">
               Gold Standard

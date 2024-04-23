@@ -37,10 +37,9 @@ export default function AnimatedContent() {
     { index: 1, icon: icons.cloudflare },
     { index: 2, icon: icons.digitalocean },
     { index: 3, icon: icons.npm },
-    { index: 4, icon: icons.github },
-    { index: 4, icon: icons.fly },
-    { index: 4, icon: icons.figma },
-    // Add more items as needed
+    { index: 5, icon: icons.github },
+    { index: 6, icon: icons.fly },
+    { index: 7, icon: icons.figma },
   ];
 
   //   useGSAP(
@@ -130,8 +129,10 @@ export default function AnimatedContent() {
           <React.Fragment key={index}>
             {index === Math.floor(items.length) / 2 && (
               <>
-                <div className="w-[96px]">
-                  <Image src={LogoOnly} alt="Logo" />
+                <div className="pulsing-icon flex aspect-square shrink-0 items-center justify-center rounded-full border border-blue-50/30 bg-blue-50/25 p-3 text-3xl text-blue-100 opacity-80 md:text-4xl lg:text-5xl">
+                  <div className="w-[96px]">
+                    <Image src={LogoOnly} alt="Logo" />
+                  </div>
                 </div>
 
                 {/* check globals.css for signal life class */}

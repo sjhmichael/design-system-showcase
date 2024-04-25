@@ -11,7 +11,7 @@ import {
   FaGoogle,
 } from "react-icons/fa6";
 
-const Main = () => {
+function Main() {
   return (
     <div className="w-full px-8 md:mb-[128px] mb-24">
       <div className="justify-center items-center flex pt-[172px]">
@@ -76,6 +76,6 @@ const Main = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Main;

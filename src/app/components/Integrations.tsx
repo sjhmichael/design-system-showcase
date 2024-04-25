@@ -1,11 +1,9 @@
 "use client";
 
 import React from "react";
-// import gsap from "gsap";
-// import { useGSAP } from "@gsap/react";
-
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
-
 import LogoOnly from "./../../../public/LogoOnly.svg";
 import Image from "next/image";
 
@@ -42,73 +40,70 @@ export default function AnimatedContent() {
     { index: 7, icon: icons.figma },
   ];
 
-  //   useGSAP(
-  //     () => {
-  //       const tl = gsap.timeline({
-  //         //repeat forever
-  //         repeat: -1,
-  //         defaults: { ease: "power2.inOut" },
-  //       });
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      //repeat forever
+      repeat: -1,
+      defaults: { ease: "power2.inOut" },
+    });
 
-  //       tl.to(".pulsing-logo", {
-  //         keyframes: [
-  //           {
-  //             filter: "brightness(2)",
-  //             opacity: 1,
-  //             duration: 0.4,
-  //             ease: "power2.in",
-  //           },
-  //           {
-  //             filter: "brightness(1)",
-  //             opacity: 0.7,
-  //             duration: 0.9,
-  //           },
-  //         ],
-  //       });
+    tl.to(".pulsing-logo", {
+      keyframes: [
+        {
+          filter: "brightness(2)",
+          opacity: 1,
+          duration: 0.4,
+          ease: "power2.in",
+        },
+        {
+          filter: "brightness(1)",
+          opacity: 0.7,
+          duration: 0.9,
+        },
+      ],
+    });
 
-  //       tl.to(
-  //         ".signal-line",
-  //         {
-  //           keyframes: [
-  //             { backgroundPosition: "0% 0%" },
-  //             {
-  //               backgroundPosition: "100% 100%",
-  //               //stagger to ensure everything animates in order
-  //               stagger: { from: "center", each: 0.3 },
-  //               duration: 1,
-  //             },
-  //           ],
-  //         },
-  //         "-=1.4",
-  //       );
+    tl.to(
+      ".signal-line",
+      {
+        keyframes: [
+          { backgroundPosition: "0% 0%" },
+          {
+            backgroundPosition: "100% 100%",
+            //stagger to ensure everything animates in order
+            stagger: { from: "center", each: 0.3 },
+            duration: 1,
+          },
+        ],
+      },
+      "-=1.4"
+    );
 
-  //       tl.to(
-  //         ".pulsing-icon",
-  //         {
-  //           keyframes: [
-  //             {
-  //               opacity: 1,
-  //               stagger: {
-  //                 from: "center",
-  //                 each: 0.3,
-  //               },
-  //               duration: 1,
-  //             },
-  //             {
-  //               opacity: 0.4,
-  //               duration: 1,
-  //               stagger: {
-  //                 from: "center",
-  //                 each: 0.3,
-  //               },
-  //             },
-  //           ],
-  //         },
-  //         "-=2",
-  //       );
-  //     },
-  //     { scope: container },
-  //   );
+    tl.to(
+      ".pulsing-icon",
+      {
+        keyframes: [
+          {
+            opacity: 1,
+            stagger: {
+              from: "center",
+              each: 0.3,
+            },
+            duration: 1,
+          },
+          {
+            opacity: 0.4,
+            duration: 1,
+            stagger: {
+              from: "center",
+              each: 0.3,
+            },
+          },
+        ],
+      },
+      "-=2"
+    );
+  }, {});
 
   return (
     <div className="md:mb-64 mb-24 px-8 flex flex-col space-y-12">

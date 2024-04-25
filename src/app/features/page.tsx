@@ -1,10 +1,13 @@
 import React from "react";
+
 import FeaturesMain from "../components/FeaturesMain";
 
-export default function () {
+function page() {
   return (
-    <div className="">
+    <div>
       <FeaturesMain />
     </div>
   );
 }
+
+export default page;

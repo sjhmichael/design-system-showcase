@@ -1,10 +1,12 @@
 import React from "react";
 import PricingMain from "../components/PricingMain";
 
-export default function () {
+function page() {
   return (
-    <div className="">
+    <div>
       <PricingMain />
     </div>
   );
 }
+
+export default page;

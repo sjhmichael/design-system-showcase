@@ -68,7 +68,7 @@ function PricingMain() {
               </div>
             </ul>
             <div className="h-full w-full flex justify-end flex-col">
-              <button className="bg-slate-800 rounded-lg text-center p-4">
+              <button className="bg-slate-800 rounded-full text-center p-3">
                 Choose Plan
               </button>
             </div>

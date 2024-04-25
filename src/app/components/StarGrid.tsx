@@ -1,112 +1,111 @@
-// src/components/StarGrid.tsx
 "use client";
-// import gsap from "gsap";
-// import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 // import usePrefersReducedMotion from "@/hooks/usePrefersReducedMotion";
 import { useRef } from "react";
 
 export default function StarGrid() {
-  //   const container = useRef(null);
-  //   const prefersReducedMotion = usePrefersReducedMotion();
-  //   gsap.registerPlugin(useGSAP);
+  const container = useRef(null);
+  // const prefersReducedMotion = usePrefersReducedMotion();
+  gsap.registerPlugin(useGSAP);
 
   // row and columns in grid
-  const grid = [64, 64] as const;
+  const grid = [32, 32] as const;
 
-  //   useGSAP(
-  //     () => {
-  //       //accessibility settings
-  //       if (prefersReducedMotion) {
-  //         gsap.set(container.current, { opacity: 1 });
-  //         gsap.set(".star-grid-item", {
-  //           opacity: 0.2,
-  //           scale: 1,
-  //         });
-  //         return;
-  //       }
+  useGSAP(
+    () => {
+      //accessibility settings
+      // if (prefersReducedMotion) {
+      //   gsap.set(container.current, { opacity: 1 });
+      //   gsap.set(".star-grid-item", {
+      //     opacity: 0.2,
+      //     scale: 1,
+      //   });
+      //   return;
+      // }
 
-  //       //renders the stargrid item on pageload
-  //       gsap.set(".star-grid-item", {
-  //         opacity: 0,
-  //         transformOrigin: "center",
-  //         color: "#fff",
-  //       });
-  //       gsap.set(container.current, { opacity: 1 });
+      //renders the stargrid item on pageload
+      gsap.set(".star-grid-item", {
+        opacity: 0,
+        transformOrigin: "center",
+        color: "#fff",
+      });
+      gsap.set(container.current, { opacity: 1 });
 
-  //       const tl = gsap.timeline();
+      const tl = gsap.timeline();
 
-  //       //entrance animation
-  //       tl.to(".star-grid-item", {
-  //         keyframes: [
-  //           {
-  //             opacity: 0,
-  //             duration: 0,
-  //           },
-  //           {
-  //             opacity: 0.4,
-  //             rotate: "+=180",
-  //             color: "#ffd057",
-  //             scale: 3,
-  //             duration: 0.6,
-  //             stagger: {
-  //               amount: 2,
-  //               grid: grid,
-  //               from: "center",
-  //             },
-  //           },
-  //           {
-  //             opacity: 0.2,
-  //             rotate: "+=180",
-  //             color: "#fff",
-  //             scale: 1,
-  //             delay: -2,
-  //             duration: 0.6,
-  //             stagger: {
-  //               amount: 2,
-  //               grid: grid,
-  //               from: "center",
-  //             },
-  //           },
-  //         ],
-  //       });
+      //entrance animation
+      tl.to(".star-grid-item", {
+        keyframes: [
+          {
+            opacity: 0,
+            duration: 0,
+          },
+          {
+            opacity: 0.4,
+            rotate: "+=180",
+            color: "#ffd057",
+            scale: 3,
+            duration: 0.6,
+            stagger: {
+              amount: 2,
+              grid: grid,
+              from: "center",
+            },
+          },
+          {
+            opacity: 0.2,
+            rotate: "+=180",
+            color: "#fff",
+            scale: 1,
+            delay: -2,
+            duration: 0.6,
+            stagger: {
+              amount: 2,
+              grid: grid,
+              from: "center",
+            },
+          },
+        ],
+      });
 
-  //       //loop animation
-  //       tl.to(".star-grid-item", {
-  //         delay: 4,
-  //         repeat: -1,
-  //         repeatDelay: 4,
+      //loop animation
+      tl.to(".star-grid-item", {
+        delay: 4,
+        repeat: -1,
+        repeatDelay: 4,
 
-  //         keyframes: [
-  //           {
-  //             opacity: 0.4,
-  //             rotate: "+=180",
-  //             color: "#ffd057",
-  //             scale: 3,
-  //             duration: 0.6,
-  //             stagger: {
-  //               amount: 2,
-  //               grid: grid,
-  //               from: "center",
-  //             },
-  //           },
-  //           {
-  //             opacity: 0.2,
-  //             rotate: "+=180",
-  //             color: "#fff",
-  //             scale: 1,
-  //             delay: -2,
-  //             duration: 0.6,
-  //             stagger: {
-  //               amount: 2,
-  //               grid: grid,
-  //               from: "center",
-  //             },
-  //           },
-  //         ],
-  //       });
-  //     },
-  //     { scope: container },
-  //   );
+        keyframes: [
+          {
+            opacity: 0.4,
+            rotate: "+=180",
+            color: "#ffd057",
+            scale: 3,
+            duration: 0.6,
+            stagger: {
+              amount: 2,
+              grid: grid,
+              from: "center",
+            },
+          },
+          {
+            opacity: 0.2,
+            rotate: "+=180",
+            color: "#fff",
+            scale: 1,
+            delay: -2,
+            duration: 0.6,
+            stagger: {
+              amount: 2,
+              grid: grid,
+              from: "center",
+            },
+          },
+        ],
+      });
+    },
+    { scope: container }
+  );
 
   return (
     <svg
@@ -118,7 +117,7 @@ export default function StarGrid() {
       width="100%"
       opacity={0.5}
       color="#fff"
-      //   ref={container}
+      ref={container}
       style={{
         maskImage: "linear-gradient(black, transparent)",
       }}
@@ -132,8 +131,8 @@ export default function StarGrid() {
                 fill="currentColor"
                 opacity=".2"
                 className="star-grid-item"
-                d={`M${j * 16},${
-                  i * 16 + 8
+                d={`M${j * 32},${
+                  i * 32 + 8
                 }a0.14,0.14,0,0,1,0.26,0l0.14,0.36a2.132,2.132,0,0,0,1.27,1.27l0.37,0.14a0.14,0.14,0,0,1,0,0.26l-0.37,0.14a2.132,2.132,0,0,0,-1.27,1.27l-0.14,0.37a0.14,0.14,0,0,1,-0.26,0l-0.14,-0.37a2.132,2.132,0,0,0,-1.27,-1.27l-0.36,-0.14a0.14,0.14,0,0,1,0,-0.26l0.37,-0.14a2.132,2.132,0,0,0,1.26,-1.27l0.14,-0.36z`}
               />
             );

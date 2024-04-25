@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import TypeScriptImage from "./../../../public/TypeScript.png";
+import SmallScreen from "./../../../public/small-screenshot.png";
 import { FaReact, FaArrowRight } from "react-icons/fa";
 
 function Bento() {
@@ -66,14 +67,22 @@ function Bento() {
           </div>
           {/* Bento Item 3 */}
           <div className="glass-container grid grid-rows-subgrid">
-            <div className="flex flex-col space-y-4 p-6 bg-gray-950 text-gray-100 rounded-lg md:p-12">
-              <h1 className="text-3xl font-medium">Ready</h1>
-              <p className="text-balance text-gray-400">
-                Atomic Design System allow
-              </p>
-              <div className="w-fit group flex flex-row items-center space-x-4 font-medium hover:cursor-pointer">
-                <h1>Learn More</h1>
-                <FaArrowRight className="group-hover:translate-x-2 duration-300" />
+            <div className="flex flex-col space-y-4 bg-gray-950 text-gray-100 rounded-lg overflow-hidden">
+              <Image
+                src={SmallScreen}
+                alt="smallscreenshot"
+                width={384}
+                className=""
+              />
+              <div className="p-12 flex flex-col space-y-4">
+                <h1 className="text-3xl font-medium">Ready</h1>
+                <p className="text-balance text-gray-400">
+                  Atomic Design System allow
+                </p>
+                <div className="w-fit group flex flex-row items-center space-x-4 font-medium hover:cursor-pointer">
+                  <h1>Learn More</h1>
+                  <FaArrowRight className="group-hover:translate-x-2 duration-300" />
+                </div>
               </div>
             </div>
           </div>

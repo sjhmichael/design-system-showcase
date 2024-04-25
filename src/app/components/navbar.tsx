@@ -53,7 +53,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/features" className="hover:text-gray-100 duration-300">
+            <Link href="/pricing" className="hover:text-gray-100 duration-300">
               Pricing
             </Link>
           </li>
@@ -121,7 +121,7 @@ function Navbar() {
             {" "}
             <Link
               onClick={handleClick}
-              href="/features"
+              href="/pricing"
               className="hover:text-gray-100 duration-300"
             >
               Pricing

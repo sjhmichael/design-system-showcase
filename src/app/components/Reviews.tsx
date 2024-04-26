@@ -45,7 +45,7 @@ function Reviews() {
                 </div>
               </div>
               <p className="mt-6">
-                Tetrisly has truly revolutionized my design process with its
+                Atomic has truly revolutionized my design process with its
                 comprehensive design system library and remarkable attention to
                 detail.
               </p>
@@ -66,7 +66,7 @@ function Reviews() {
                 </div>
               </div>
               <p className="mt-6">
-                What sets Tetrisly's design system apart, in my view, is its
+                What sets Atomic's design system apart, in my view, is its
                 approach to streamlining the design process while adhering to
                 best practices in usability and ensuring design consistency.
               </p>
@@ -91,7 +91,7 @@ function Reviews() {
                 </div>
               </div>
               <p className="mt-6">
-                Tetrisly has truly revolutionized my design process with its
+                Atomic has truly revolutionized my design process with its
                 comprehensive design system library and remarkable attention to
                 detail.
               </p>
@@ -112,7 +112,7 @@ function Reviews() {
                 </div>
               </div>
               <p className="mt-6">
-                What sets Tetrisly's design system apart, in my view, is its
+                What sets Atomic design system apart, in my view, is its
                 approach to streamlining the design process while adhering to
               </p>
             </div>
@@ -132,7 +132,7 @@ function Reviews() {
               </div>
               <p className="mt-6">
                 {" "}
-                Tetrisly has truly revolutionized my design process with its
+                Atomic has truly revolutionized my design process with its
                 comprehensive design system library and remarkable attention to
                 detail.
               </p>
@@ -157,7 +157,7 @@ function Reviews() {
                 </div>
               </div>
               <p className="mt-6">
-                Tetrisly has truly revolutionized my design process with its
+                Atomic has truly revolutionized my design process with its
                 comprehensive design system library and remarkable attention to
                 detail.
               </p>
@@ -178,7 +178,7 @@ function Reviews() {
                 </div>
               </div>
               <p className="mt-6">
-                What sets Tetrisly's design system apart, in my view, is its
+                What sets Atomic design system apart, in my view, is its
                 approach to streamlining the design process while adhering to
               </p>
             </div>

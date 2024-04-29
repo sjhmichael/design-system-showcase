@@ -201,7 +201,7 @@ function PricingMain() {
             </div>
           </div>
         </div>
-        <div className="text-center flex flex-col gap-y-8 w-full mb-24">
+        <div className="text-center flex flex-col gap-y-8 w-full mb-32">
           <h1 className="text-slate-400 text-sm font-medium ">
             Trusted By the world's leading companies
           </h1>

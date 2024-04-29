@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-[#03040c]">
+    <html lang="en" className="bg-[#050611]">
       <body className={inter.className}>
         <Navbar />
         {children}

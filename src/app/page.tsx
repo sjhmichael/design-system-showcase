@@ -9,9 +9,9 @@ export default function Home() {
     <div>
       <StarGrid />
       <Main />
-      <Reviews />
       <Integrations />
       <Bento />
+      <Reviews />
     </div>
   );
 }

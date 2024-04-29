@@ -10,7 +10,7 @@ function FeaturesMain() {
     <div className="relative w-full px-8 justify-center flex mb-24">
       <div className="text-gray-100 items-center pt-[172px] max-w-[1000px]">
         {/* Features */}
-        <div className="flex md:flex-row flex-col justify-between space-y-12">
+        <div className="flex md:flex-row flex-col justify-between space-y-12 items-center">
           <div className="text-slate-400 flex flex-col space-y-8">
             <h1 className="text-5xl text-gray-100 font-medium">Features</h1>
             <p className="text-balance">
@@ -21,7 +21,7 @@ function FeaturesMain() {
             <CTAButton />
           </div>
 
-          <div className="glass-container w-11/12">
+          <div className="glass-container w-11/12 flex">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter animate-pulse" />
             <Image src={TypeScript} className="rounded-lg" alt="HeroImage" />
           </div>

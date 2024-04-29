@@ -1,6 +1,10 @@
 import React from "react";
 import CTAButton from "./CTAButton";
-import { FaCheck } from "react-icons/fa6";
+import { FaCheck, FaGoogle } from "react-icons/fa6";
+import Image from "next/image";
+import Tuple from "./../../../public/tuple-logo-white.svg";
+import Reform from "./../../../public/reform-logo-white.svg";
+import FAQ from "./FAQ";
 
 function PricingMain() {
   return (
@@ -13,7 +17,7 @@ function PricingMain() {
             enhanced security controls, and additional features.
           </p>
         </div>
-        <div className="grid lg:grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] gap-6 text-gray-100 mt-8 mb-24">
+        <div className="grid lg:grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] gap-6 text-gray-100 mt-16 mb-16">
           <div className="p-8 border-2 flex justify-start flex-col rounded-3xl border-gray-800 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800">
             <h1 className="text-xl font-medium text-gray-100">Basic</h1>
             <p className="text-sm text-slate-400">
@@ -45,7 +49,7 @@ function PricingMain() {
               </div>
             </ul>
             <div className="h-full w-full flex justify-end flex-col">
-              <button className="bg-slate-800 rounded-full text-center p-3">
+              <button className="bg-slate-800 rounded-full text-center p-3 hover:bg-slate-700 duration-300">
                 Choose Plan
               </button>
             </div>
@@ -90,7 +94,7 @@ function PricingMain() {
               </div>
             </ul>
             <div className="h-full w-full flex justify-end flex-col">
-              <button className="bg-slate-800 rounded-full text-center p-3">
+              <button className="bg-slate-800 rounded-full text-center p-3 hover:bg-slate-700 duration-300">
                 Choose Plan
               </button>
             </div>
@@ -134,12 +138,57 @@ function PricingMain() {
               </div>
             </ul>
             <div className="h-full w-full flex justify-end flex-col">
-              <button className="bg-slate-800 rounded-full text-center p-3">
+              <button className="bg-slate-800 rounded-full text-center p-3 hover:bg-slate-700 duration-300">
                 Choose Plan
               </button>
             </div>
           </div>
         </div>
+        <div className="grid grid-cols-[auto_auto] text-gray-100 gap-12 mb-40">
+          <div className="flex flex-col space-y-8">
+            <Image src={Tuple} alt="Logo" />
+            <p className="text-balance">
+              “Amet amet eget scelerisque tellus sit neque faucibus non
+              eleifend. Integer eu praesent at a. Ornare arcu gravida natoque
+              erat et cursus tortor consequat at. Vulputate gravida sociis enim
+              nullam ultricies habitant malesuada lorem ac. Tincidunt urna dui
+              pellentesque sagittis.”
+            </p>
+            <div className="flex flex-row space-x-6">
+              <img
+                src="https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=2598&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="profile picture"
+                className="rounded-full object-cover h-12 w-12"
+              />
+              <div className="flex flex-col">
+                <h1 className="font-medium">John Smith</h1>
+                <h1 className="text-slate-400">Lead Product Designer</h1>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col space-y-8">
+            <Image src={Reform} alt="Logo" />
+            <p className="text-balance">
+              “Amet amet eget scelerisque tellus sit neque faucibus non
+              eleifend. Integer eu praesent at a. Ornare arcu gravida natoque
+              erat et cursus tortor consequat at. Vulputate gravida sociis enim
+              nullam ultricies habitant malesuada lorem ac. Tincidunt urna dui
+              pellentesque sagittis.”
+            </p>
+            <div className="flex flex-row space-x-6">
+              <img
+                src="https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=2598&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="profile picture"
+                className="rounded-full object-cover h-12 w-12"
+              />
+              <div className="flex flex-col">
+                <h1 className="font-medium">John Smith</h1>
+                <h1 className="text-slate-400">Lead Product Designer</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <FAQ />
       </div>
     </div>
   );

@@ -54,3 +54,21 @@ body {
     --rotation: 0deg;
   }
 }
+
+.reviews-slider:hover {
+  animation-play-state: paused;
+}
+
+.reviews-slide {
+  animation: slide 120s linear infinite
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(calc(-100% - 32px))
+  }
+}

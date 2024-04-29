@@ -106,7 +106,7 @@ export default function AnimatedContent() {
   }, {});
 
   return (
-    <div className="md:mb-64 mb-24 px-8 flex flex-col space-y-12">
+    <div className="md:my-64 mb-24 px-8 flex flex-col space-y-12">
       <div className="text-gray-100 flex flex-col space-y-8 justify-center items-cente text-center text-balance">
         <h1 className="text-5xl font-medium">
           <span className="bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text">

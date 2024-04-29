@@ -8,56 +8,56 @@ function Reviews() {
     {
       index: 1,
       name: "John Smith",
-      role: "Lead Product Designer",
+      role: "Product Designer",
       image:
         "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Atomic Design System represents a commitment to crafting tools and platforms tailored to the needs of the developer community, ensuring intuitive interfaces, robust APIs, and comprehensive documentation.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       index: 2,
-      name: "John Smith 1",
-      role: "Lead Product Designer",
+      name: "Mary Sue",
+      role: "Founder of ReForm",
       image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Atomic Design System represents a commitment to crafting tools and platforms tailored to the needs of the developer community, ensuring intuitive interfaces, robust APIs, and comprehensive documentation.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui accumsan sit amet.",
     },
     {
       index: 3,
-      name: "John Smith 2",
-      role: "Lead Product Designer",
+      name: "Jane Smith",
+      role: "Co-founder of Tapal",
       image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Atomic Design System represents a commitment to crafting tools and platforms tailored to the needs of the developer community, ensuring intuitive interfaces, robust APIs, and comprehensive documentation.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Amet risus nullam eget felis eget nunc. Ridiculus mus mauris vitae ultricies leo integer malesuada.",
     },
     {
       index: 4,
-      name: "John Smith 3",
+      name: "William Grant",
       role: "Lead Product Designer",
       image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=2598&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Atomic Design System represents a commitment to crafting tools and platforms tailored to the needs of the developer community, ensuring intuitive interfaces, robust APIs, and comprehensive documentation.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Amet risus nullam eget felis eget nunc. Ridiculus mus mauris vitae ultricies leo integer malesuada.",
     },
     {
       index: 5,
-      name: "John Smith 4",
+      name: "Jack Henry",
       role: "Lead Product Designer",
       image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Atomic Design System represents a commitment to crafting tools and platforms tailored to the needs of the developer community, ensuring intuitive interfaces, robust APIs, and comprehensive documentation.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing commodo elit at imperdiet dui accumsan sit amet.",
     },
     {
       index: 6,
-      name: "John Smith 5",
+      name: "Leslie Nielsen",
       role: "Lead Product Designer",
       image:
-        "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       description:
-        "Atomic Design System represents a commitment to crafting tools and platforms tailored to the needs of the developer community, ensuring intuitive interfaces, robust APIs, and comprehensive documentation.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
   ];
 
@@ -86,6 +86,7 @@ function Reviews() {
         </div>
 
         {/* carousel */}
+
         <div className="reviews group mx-auto -ml-6 -mr-6 flex w-full items-start gap-8 my-24 relative">
           <div className="absolute left-0 top-0 h-full z-10 lg:w-[300px] w-[64px] bg-gradient-to-r via-[#03040cce] from-[#03040c] ... " />
           <div className="absolute right-0 top-0 h-full z-10 lg:w-[300px] w-[64px] bg-gradient-to-l via-[#03040cce] from-[#03040c] ..." />
@@ -95,7 +96,7 @@ function Reviews() {
           <div className="reviews-slide group-hover:animation-paused flex min-w-full shrink-0 animate-scroll-x items-start justify-around gap-8">
             {reviews.map(({ index, name, role, image, description }) => (
               <React.Fragment key={index}>
-                <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
+                <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-300 text-left bg-gradient-to-b from-slate-800 from-10%">
                   <p className="mb-4 text-sm">{description}</p>
                   <div className="flex flex-row gap-4 items-center">
                     <img
@@ -118,7 +119,7 @@ function Reviews() {
           <div className="reviews-slide group-hover:animation-paused flex min-w-full shrink-0 animate-scroll-x items-start justify-around gap-8">
             {reviews.map(({ index, name, role, image, description }) => (
               <React.Fragment key={index}>
-                <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
+                <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-300 text-left bg-gradient-to-b from-slate-800 from-10%">
                   <p className="mb-4 text-sm">{description}</p>
                   <div className="flex flex-row gap-4 items-center">
                     <img

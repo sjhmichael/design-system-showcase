@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./../../../public/Logo.svg";
+import Logo from "./../../../public/icons/Logo.svg";
 import Image from "next/image";
 import { FaGithub, FaTwitter } from "react-icons/fa";
 

@@ -1,10 +1,23 @@
 import React from "react";
-import CTAButton from "./CTAButton";
 import { FaCheck, FaGoogle } from "react-icons/fa6";
 import Image from "next/image";
-import Tuple from "./../../../public/tuple-logo-white.svg";
-import Reform from "./../../../public/reform-logo-white.svg";
 import FAQ from "./FAQ";
+
+import Tuple from "./../../../public/icons/tuple-logo-white.svg";
+import Reform from "./../../../public/icons/reform-logo-white.svg";
+import ThreeM from "./../../../public/icons/3m.svg";
+import Booth from "./../../../public/icons/booth.svg";
+import Infiscal from "./../../../public/icons/infisical.svg";
+import Vercel from "./../../../public/icons/vercel.svg";
+import Rework from "./../../../public/icons/reworkd.svg";
+import Koywe from "./../../../public/icons/koywe.svg";
+import Lastro from "./../../../public/icons/lastro.svg";
+import Sameday from "./../../../public/icons/sameday.svg";
+import Totvs from "./../../../public/icons/totvs.svg";
+import Voahoteis from "./../../../public/icons/voahoteis.svg";
+import WarnerBros from "./../../../public/icons/warner-bros.svg";
+import Warp from "./../../../public/icons/warp.svg";
+import NextLogo from "./NextLogo";
 
 function PricingMain() {
   return (
@@ -185,6 +198,48 @@ function PricingMain() {
                 <h1 className="font-medium">John Smith</h1>
                 <h1 className="text-slate-400">Lead Product Designer</h1>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="text-center flex flex-col gap-y-8 w-full mb-24">
+          <h1 className="text-slate-400 text-sm font-medium ">
+            Trusted By the world's leading companies
+          </h1>
+          <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 shrink-0 gap-8 items-center place-items-center">
+            <div className="w-40 shrink-0">
+              <Image src={Reform} alt="logo" />
+            </div>
+            <div className="w-40 shrink-0">
+              <Image src={Booth} alt="logo" />
+            </div>
+            <div className="w-40">
+              <Image
+                src={Infiscal}
+                alt="logo"
+                height={56}
+                className="shrink-0"
+              />
+            </div>
+            <div className="w-40 shrink-0">
+              <NextLogo fillOpacity={0.2} />
+            </div>
+            <div className="w-40 shrink-0">
+              <Image src={Tuple} alt="logo" />
+            </div>
+            <div className="w-40 shrink-0">
+              <Image src={WarnerBros} alt="logo" />
+            </div>
+            <div className="w-40 shrink-0">
+              <Image src={Rework} alt="logo" />
+            </div>
+            <div className="w-40 shrink-0">
+              <Image src={Warp} alt="logo" />
+            </div>
+            <div className="w-40 shrink-0">
+              <Image src={Totvs} alt="logo" />
+            </div>
+            <div className="w-40 shrink-0">
+              <Image src={Sameday} alt="logo" />
             </div>
           </div>
         </div>

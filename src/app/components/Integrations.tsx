@@ -4,7 +4,7 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
-import LogoOnly from "./../../../public/LogoOnly.svg";
+import LogoOnly from "./../../../public/icons/LogoOnly.svg";
 import Image from "next/image";
 
 import {

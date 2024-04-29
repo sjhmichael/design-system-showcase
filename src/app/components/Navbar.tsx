@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Logo from "./../../../public/Logo.svg";
+import Logo from "./../../../public/icons/Logo.svg";
 import Image from "next/image";
 import { FaGithub, FaBars, FaTimes } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";

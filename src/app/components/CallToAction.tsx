@@ -1,5 +1,5 @@
 import React from "react";
-import LogoOnly from "./../../../public/LogoOnly.svg";
+import LogoOnly from "./../../../public/icons/LogoOnly.svg";
 import Image from "next/image";
 import CTAButton from "./CTAButton";
 import StarGrid from "./StarGrid";

@@ -30,7 +30,12 @@ const FAQ = () => {
       answer:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis",
     },
-    // Add more FAQ items here
+    {
+      index: 4,
+      question: "Question Example 2",
+      answer:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis",
+    },
   ];
 
   return (

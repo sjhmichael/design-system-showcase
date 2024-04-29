@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 
@@ -82,231 +84,56 @@ function Reviews() {
             intuitive interfaces, robust APIs, and comprehensive documentation.
           </h1>
         </div>
+
+        {/* carousel */}
         <div className="reviews group mx-auto -ml-6 -mr-6 flex w-full items-start gap-8 my-24 relative">
           <div className="absolute left-0 top-0 h-full z-10 lg:w-[300px] w-[64px] bg-gradient-to-r via-[#03040cce] from-[#03040c] ... " />
           <div className="absolute right-0 top-0 h-full z-10 lg:w-[300px] w-[64px] bg-gradient-to-l via-[#03040cce] from-[#03040c] ..." />
+
           {/* first section */}
 
           <div className="reviews-slide group-hover:animation-paused flex min-w-full shrink-0 animate-scroll-x items-start justify-around gap-8">
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
+            {reviews.map(({ index, name, role, image, description }) => (
+              <React.Fragment key={index}>
+                <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
+                  <p className="mb-4 text-sm">{description}</p>
+                  <div className="flex flex-row gap-4 items-center">
+                    <img
+                      src={image}
+                      alt="profile picture"
+                      className="rounded-full object-cover h-10 w-10"
+                    />
+                    <div className="relative flex flex-col">
+                      <h1 className="font-medium">{name}</h1>
+                      <h1 className="text-gray-400">{role}</h1>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
+              </React.Fragment>
+            ))}
           </div>
+
           {/* 2nd section */}
+
           <div className="reviews-slide group-hover:animation-paused flex min-w-full shrink-0 animate-scroll-x items-start justify-around gap-8">
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
+            {reviews.map(({ index, name, role, image, description }) => (
+              <React.Fragment key={index}>
+                <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
+                  <p className="mb-4 text-sm">{description}</p>
+                  <div className="flex flex-row gap-4 items-center">
+                    <img
+                      src={image}
+                      alt="profile picture"
+                      className="rounded-full object-cover h-10 w-10"
+                    />
+                    <div className="relative flex flex-col">
+                      <h1 className="font-medium">{name}</h1>
+                      <h1 className="text-gray-400">{role}</h1>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
-            <div className="w-[350px] max-w-full rounded-lg p-4 md:w-[400px] text-gray-100 bg-slate-800 text-left">
-              <p className="mb-4 text-sm">
-                Atomic has truly revolutionized my design process with its
-                comprehensive design system library and remarkable attention to
-                detail.
-              </p>
-              <div className="flex flex-row gap-4 items-center">
-                <img
-                  src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="profile picture"
-                  className="rounded-full object-cover h-10 w-10"
-                />
-                <div className="relative flex flex-col">
-                  <h1 className="font-medium">John Smith</h1>
-                  <h1 className="text-gray-400">Lead Product Designer</h1>
-                </div>
-              </div>
-            </div>
+              </React.Fragment>
+            ))}
           </div>
         </div>
       </div>

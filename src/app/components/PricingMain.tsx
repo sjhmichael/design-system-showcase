@@ -157,7 +157,7 @@ function PricingMain() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-[auto_auto] text-gray-100 gap-12 mb-40">
+        <div className="grid md:grid-cols-[auto_auto] grid-rows-[auto_auto] text-gray-100 gap-12 mb-40">
           <div className="flex flex-col space-y-8">
             <Image src={Tuple} alt="Logo" />
             <p className="text-balance">
@@ -175,7 +175,7 @@ function PricingMain() {
               />
               <div className="flex flex-col">
                 <h1 className="font-medium">John Smith</h1>
-                <h1 className="text-slate-400">Lead Product Designer</h1>
+                <h1 className="text-slate-400">Founder of Tuple</h1>
               </div>
             </div>
           </div>
@@ -196,7 +196,7 @@ function PricingMain() {
               />
               <div className="flex flex-col">
                 <h1 className="font-medium">John Smith</h1>
-                <h1 className="text-slate-400">Lead Product Designer</h1>
+                <h1 className="text-slate-400">Founder of Reform</h1>
               </div>
             </div>
           </div>

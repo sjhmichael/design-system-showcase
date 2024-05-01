@@ -1,43 +1,31 @@
 "use client";
-
-import clsx from "clsx";
 import React from "react";
 import { useState } from "react";
-import { FaTimes, FaMinus } from "react-icons/fa";
+import Accordion from "./Accordion";
 
 const FAQ = () => {
-  const [faq, setFaq] = useState(false);
-  const handleClick = () => {
-    setFaq(!faq);
-  };
-
   const FAQContent = [
     {
-      index: 1,
-      question: "Question Example 1",
+      question: "What's the best thing about Switzerland?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis",
+        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
-      index: 2,
-      question: "Question Example 2",
+      question: "How do you make holy water?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis",
+        "You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
-      index: 3,
-      question: "Question Example 2",
+      question: "Why do you never see elephants hiding in trees?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis",
+        "Because they're so good at it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
     },
     {
-      index: 4,
-      question: "Question Example 2",
+      question: "What do you call someone with no body and no nose?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis",
+        "Nobody knows. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
     },
   ];
-
   return (
     <div>
       <div className="w-full mb-24">
@@ -52,22 +40,11 @@ const FAQ = () => {
             and we'll get back to you as soon as we can.
           </p>
         </div>
-        {FAQContent.map(({ question, answer, index }) => (
-          <React.Fragment key={index}>
-            <div className="my-4 hover:cursor-pointer" onClick={handleClick}>
-              <div className="text-gray-100 flex flex-col bg-gray-800 p-6 rounded-lg hover:bg-gray-700">
-                <div className="flex flex-row justify-between items-center font-medium">
-                  <h1>{question}</h1>
-                  <FaTimes className={faq ? "flex" : "hidden"} />
-                  <FaMinus className={faq ? "hidden" : "flex"} />
-                </div>
-                <div className={faq ? "hidden" : "flex"}>
-                  <p className="text-slate-400 mt-6">{answer}</p>
-                </div>
-              </div>
-            </div>
-          </React.Fragment>
-        ))}
+        <div className="my-4">
+          {FAQContent.map(({ question, answer }) => (
+            <Accordion title={question} answer={answer} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -45,9 +45,7 @@ const FAQ = () => {
         </div>
         <div className="my-4">
           {FAQContent.map(({ question, answer, id }) => (
-            <React.Fragment key={id}>
-              <Accordion title={question} answer={answer} />
-            </React.Fragment>
+            <Accordion title={question} answer={answer} key={id} />
           ))}
         </div>
       </div>

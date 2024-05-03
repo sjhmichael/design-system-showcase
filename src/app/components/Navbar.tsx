@@ -27,7 +27,7 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full flex justify-center py-8 px-8 fixed z-10">
+    <div className="w-full flex justify-center py-8 px-8 fixed z-20">
       {/* desktop menu */}
       <div
         className={
@@ -80,8 +80,8 @@ function Navbar() {
       <div
         className={
           !nav
-            ? "-translate-x-full absolute w-full h-screen top-0 left-0 bg-[#03040c] flex flex-col justify-start space-y-8 z-10 duration-300 p-10"
-            : "absolute w-full h-screen top-0 left-0 bg-[#03040c] flex flex-col justify-start space-y-8 z-10 duration-300 p-10"
+            ? "-translate-x-full absolute w-full h-screen top-0 left-0 bg-[#03040c] flex flex-col justify-start space-y-8 z-20 duration-300 p-10"
+            : "absolute w-full h-screen top-0 left-0 bg-[#03040c] flex flex-col justify-start space-y-8 z-20 duration-300 p-10"
         }
       >
         <div className="flex flex-row w-full items-center justify-between">

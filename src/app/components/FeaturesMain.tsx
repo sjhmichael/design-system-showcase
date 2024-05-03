@@ -3,6 +3,7 @@ import CTAButton from "./CTAButton";
 import Image from "next/image";
 import TypeScript from "./../../../public/TypeScript.png";
 import ExampleImage from "./../../../public/ExampleImage.png";
+import Features from "./../../../public/Features.png";
 import { FaFlask, FaMagnifyingGlass, FaImage, FaFilter } from "react-icons/fa6";
 
 function FeaturesMain() {
@@ -18,12 +19,17 @@ function FeaturesMain() {
               benchmark your own offering, and optimize your assortment and
               catalog.
             </p>
-            <CTAButton />
+            <CTAButton label="Learn More" />
           </div>
 
           <div className="glass-container w-11/12 flex">
             <div className="absolute inset-0 -z-10 bg-blue-500/30 blur-2xl filter animate-pulse" />
-            <Image src={TypeScript} className="rounded-lg" alt="HeroImage" />
+            <Image
+              src={Features}
+              className="rounded-lg"
+              alt="HeroImage"
+              quality={100}
+            />
           </div>
         </div>
         {/* Border */}
@@ -86,8 +92,13 @@ function FeaturesMain() {
             </div>
           </div>
         </div>
-        <div className="glass-container mt-14">
-          <Image src={ExampleImage} alt="test" />
+        <div className="glass-container mt-20">
+          <Image
+            src={Features}
+            className="rounded-lg"
+            alt="HeroImage"
+            quality={100}
+          />
         </div>
       </div>
     </div>

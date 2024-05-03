@@ -22,7 +22,7 @@ function CallToAction() {
             AI Powered, Real-time Data. Available today.
           </h1>
         </div>
-        <CTAButton />
+        <CTAButton label="Get Started" />
       </div>
       <div className="translate-y-[16rem] glow absolute -z-10 aspect-square w-full max-w-[50rem] rounded-full bg-blue-400/20 blur-3xl filter animate-pulse" />
     </div>

@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="w-full bg-[#070815] relative justify-center flex border-t-[1px] border-slate-600">
       {/* list */}
-      <div className="relative flex flex-col px-8 max-w-[1000px] w-full my-8">
+      <div className="relative flex flex-col px-8 max-w-[1000px] w-full mb-8 mt-12">
         <div className="relative flex flex-col md:flex-row space-y-8 md:space-y-0 justify-between">
           <div className="relative flex w-2/12 items-start min-w-[10rem] mr-8">
             <Image src={Logo} className="object-scale-down" alt="Logo" />

@@ -3,21 +3,24 @@ import { FaCheck, FaGoogle } from "react-icons/fa6";
 import Image from "next/image";
 import FAQ from "./FAQ";
 
-import Tuple from "./../../../public/icons/tuple-logo-white.svg";
-import Reform from "./../../../public/icons/reform-logo-white.svg";
-import ThreeM from "./../../../public/icons/3m.svg";
-import Booth from "./../../../public/icons/booth.svg";
-import Infiscal from "./../../../public/icons/infisical.svg";
-import Vercel from "./../../../public/icons/vercel.svg";
-import Rework from "./../../../public/icons/reworkd.svg";
-import Koywe from "./../../../public/icons/koywe.svg";
-import Lastro from "./../../../public/icons/lastro.svg";
-import Sameday from "./../../../public/icons/sameday.svg";
-import Totvs from "./../../../public/icons/totvs.svg";
-import Voahoteis from "./../../../public/icons/voahoteis.svg";
-import WarnerBros from "./../../../public/icons/warner-bros.svg";
-import Warp from "./../../../public/icons/warp.svg";
-import NextLogo from "./NextLogo";
+import Tuple from "./../../../public/icons/tuple-logo-white";
+import TupleSVG from "./../../../public/icons/tuple-logo-white.svg";
+import ReformSVG from "./../../../public/icons/reform-logo-white.svg";
+
+import Rework from "./../../../public/icons/reworkd";
+
+import Sameday from "./../../../public/icons/sameday";
+import Totvs from "./../../../public/icons/totvs";
+import WarnerBros from "./../../../public/icons/warner-bros";
+import Vercel from "./../../../public/icons/vercel";
+import Reform from "./../../../public/icons/reform-logo-white";
+import Booth from "./../../../public/icons/booth";
+import Infisical from "../../../public/icons/infisical";
+import Forbes from "./../../../public/icons/forbes";
+import Warp from "./../../../public/icons/warp";
+import Voahoteis from "./../../../public/icons/voahoteis";
+import Koywe from "./../../../public/icons/koywe";
+import Lastro from "./../../../public/icons/lastro";
 
 function PricingMain() {
   return (
@@ -159,7 +162,7 @@ function PricingMain() {
         </div>
         <div className="grid md:grid-cols-[auto_auto] grid-rows-[auto_auto] text-gray-100 gap-12 mb-40">
           <div className="flex flex-col space-y-8">
-            <Image src={Tuple} alt="Logo" />
+            <Image src={TupleSVG} alt="logo" />
             <p className="text-balance">
               “Amet amet eget scelerisque tellus sit neque faucibus non
               eleifend. Integer eu praesent at a. Ornare arcu gravida natoque
@@ -180,7 +183,7 @@ function PricingMain() {
             </div>
           </div>
           <div className="flex flex-col space-y-8">
-            <Image src={Reform} alt="Logo" />
+            <Image src={ReformSVG} alt="logo" />
             <p className="text-balance">
               “Amet amet eget scelerisque tellus sit neque faucibus non
               eleifend. Integer eu praesent at a. Ornare arcu gravida natoque
@@ -206,41 +209,20 @@ function PricingMain() {
             Trusted By the world's leading companies
           </h1>
           <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 shrink-0 gap-8 items-center place-items-center">
-            <div className="w-40 shrink-0">
-              <Image src={Reform} alt="logo" />
+            <Reform className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <Booth className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <Infisical className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <Vercel className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <div className="flex justify-start w-40">
+              <Tuple className="w-32 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
             </div>
-            <div className="w-40 shrink-0">
-              <Image src={Booth} alt="logo" />
+            <Koywe className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <Warp className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <div className="flex justify-start w-40">
+              <Lastro className="w-32 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
             </div>
-            <div className="w-40">
-              <Image
-                src={Infiscal}
-                alt="logo"
-                height={56}
-                className="shrink-0"
-              />
-            </div>
-            <div className="w-40 shrink-0">
-              <NextLogo fillOpacity={0.2} />
-            </div>
-            <div className="w-40 shrink-0">
-              <Image src={Tuple} alt="logo" />
-            </div>
-            <div className="w-40 shrink-0">
-              <Image src={WarnerBros} alt="logo" />
-            </div>
-            <div className="w-40 shrink-0">
-              <Image src={Rework} alt="logo" />
-            </div>
-            <div className="w-40 shrink-0">
-              <Image src={Warp} alt="logo" />
-            </div>
-            <div className="w-40 shrink-0">
-              <Image src={Totvs} alt="logo" />
-            </div>
-            <div className="w-40 shrink-0">
-              <Image src={Sameday} alt="logo" />
-            </div>
+            <Totvs className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <Sameday className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
           </div>
         </div>
         <FAQ />

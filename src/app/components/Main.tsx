@@ -45,7 +45,7 @@ function Main() {
             prototype your apps faster than ever before.
           </p>
 
-          <CTAButton />
+          <CTAButton label="Get Started" />
 
           <div className="flex flex-col space-y-4 text-center items-center">
             <h1 className="text-sm text-slate-400">

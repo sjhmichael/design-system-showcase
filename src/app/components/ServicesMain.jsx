@@ -8,23 +8,21 @@ import LightningIcon from "../../../public/icons/LightningIcon";
 
 function ServicesMain() {
 
-  window.onload = function () {
-    if (typeof window !== 'undefined') {
-      document.getElementById("cards").onmousemove = (e) => {
-        for (const card of document.getElementsByClassName("card")) {
-          const rect = card.getBoundingClientRect(),
-            x = e.clientX - rect.left,
-            y = e.clientY - rect.top;
+  if (typeof window !== 'undefined') {
+    document.getElementById("cards").onmousemove = (e) => {
+      for (const card of document.getElementsByClassName("card")) {
+        const rect = card.getBoundingClientRect(),
+          x = e.clientX - rect.left,
+          y = e.clientY - rect.top;
 
-          card.style.setProperty("--mouse-x", `${x}px`);
-          card.style.setProperty("--mouse-y", `${y}px`);
-        }
-
-      };
-    }
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      }
+    };
   }
 
   return (
+
     <div className="w-full px-8 flex justify-center pt-[200px]">
       <div className="max-w-[1000px] flex flex-col justify-center">
         <div className="flex md:flex-row text-gray-100 items-center mb-32 flex-col">

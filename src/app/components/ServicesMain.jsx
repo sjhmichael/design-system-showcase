@@ -24,9 +24,8 @@ function ServicesMain() {
   }, [])
 
   return (
-
-    <div className="w-full px-8 flex justify-center pt-[200px]">
-      <div className="max-w-[1000px] flex flex-col justify-center">
+    <div className="w-full px-8 flex justify-center">
+      <div className="max-w-[1000px] flex flex-col justify-center md:pt-[200px] pt-[172px]">
         <div className="flex md:flex-row text-gray-100 items-center mb-32 flex-col">
           <div className="flex flex-col basis-full text-balance space-y-8 mb-8">
             <h1 className="text-5xl font-medium">Have a chat with us!</h1>

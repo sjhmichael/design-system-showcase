@@ -8,8 +8,8 @@ import { FaFlask, FaMagnifyingGlass, FaImage, FaFilter } from "react-icons/fa6";
 
 function FeaturesMain() {
   return (
-    <div className="relative w-full px-8 justify-center flex mb-24 pt-[200px]">
-      <div className="text-gray-100 items-center max-w-[1000px]">
+    <div className="relative w-full px-8 justify-center flex mb-24">
+      <div className="text-gray-100 items-center max-w-[1000px] md:pt-[200px] pt-[172px]">
         {/* Features */}
         <div className="flex md:flex-row flex-col justify-between items-center">
           <div className="text-slate-400 flex flex-col space-y-8 mb-12">

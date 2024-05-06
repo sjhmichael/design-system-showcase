@@ -6,9 +6,7 @@ import FAQ from "./FAQ";
 import Tuple from "./../../../public/icons/tuple-logo-white";
 import TupleSVG from "./../../../public/icons/tuple-logo-white.svg";
 import ReformSVG from "./../../../public/icons/reform-logo-white.svg";
-
 import Rework from "./../../../public/icons/reworkd";
-
 import Sameday from "./../../../public/icons/sameday";
 import Totvs from "./../../../public/icons/totvs";
 import WarnerBros from "./../../../public/icons/warner-bros";
@@ -25,8 +23,8 @@ import AppsIcon from "./../../../public/icons/AppsIcon";
 
 function PricingMain() {
   return (
-    <div className="w-full flex justify-center items-center pt-[200px] px-8">
-      <div className="max-w-[1000px] flex flex-col justify-center">
+    <div className="w-full flex justify-center items-center px-8">
+      <div className="max-w-[1000px] flex flex-col justify-center md:pt-[200px] pt-[172px]">
         <div className="items-center flex flex-col space-y-8 text-center">
           <h1 className="text-gray-100 text-5xl font-medium">Pricing</h1>
           <p className="text-slate-400 text-balance">

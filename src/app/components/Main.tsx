@@ -14,7 +14,7 @@ import {
 function Main() {
   return (
     <div className="w-full px-8 md:mb-[128px] mb-24">
-      <div className="justify-center items-center flex pt-[200px]">
+      <div className="justify-center items-center flex md:pt-[200px] pt-[172px]">
         <div className="max-w-[1000px] flex flex-col text-center text-balance items-center space-y-8">
           <div className="flex flex-col lg:flex-row gap-y-2 lg:space-x-4 items-center space-x-0">
             <div className="p-2 px-4 bg-green-500/20 rounded-full text-center">

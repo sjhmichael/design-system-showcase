@@ -21,10 +21,11 @@ import Warp from "./../../../public/icons/warp";
 import Voahoteis from "./../../../public/icons/voahoteis";
 import Koywe from "./../../../public/icons/koywe";
 import Lastro from "./../../../public/icons/lastro";
+import AppsIcon from "./../../../public/icons/AppsIcon";
 
 function PricingMain() {
   return (
-    <div className="w-full flex justify-center items-center pt-[172px] px-8">
+    <div className="w-full flex justify-center items-center pt-[200px] px-8">
       <div className="max-w-[1000px] flex flex-col justify-center">
         <div className="items-center flex flex-col space-y-8 text-center">
           <h1 className="text-gray-100 text-5xl font-medium">Pricing</h1>
@@ -225,7 +226,19 @@ function PricingMain() {
             <Sameday className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
           </div>
         </div>
-        <FAQ />
+
+        <div className="flex flex-col space-y-8 text-gray-100 text-center mb-16">
+          <h1 className="text-5xl font-medium">FAQs</h1>
+          <p className="text-slate-400">
+            Have a different question and can't find the answer you're looking
+            for? Contact us{" "}
+            <span className="font-medium text-yellow-500 hover:cursor-pointer">
+              here
+            </span>{" "}
+            and we'll get back to you as soon as we can.
+          </p>
+          <FAQ />
+        </div>
       </div>
     </div>
   );

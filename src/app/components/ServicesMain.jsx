@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import FAQ from "./FAQ";
 import Apps from "../../../public/icons/AppsIcon";
 import AppsIcon from "../../../public/icons/AppsIcon";
@@ -8,18 +8,20 @@ import LightningIcon from "../../../public/icons/LightningIcon";
 
 function ServicesMain() {
 
-  if (typeof window !== 'undefined') {
-    document.getElementById("cards").onmousemove = (e) => {
-      for (const card of document.getElementsByClassName("card")) {
-        const rect = card.getBoundingClientRect(),
-          x = e.clientX - rect.left,
-          y = e.clientY - rect.top;
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      document.getElementById("cards").onmousemove = (e) => {
+        for (const card of document.getElementsByClassName("card")) {
+          const rect = card.getBoundingClientRect(),
+            x = e.clientX - rect.left,
+            y = e.clientY - rect.top;
 
-        card.style.setProperty("--mouse-x", `${x}px`);
-        card.style.setProperty("--mouse-y", `${y}px`);
-      }
-    };
-  }
+          card.style.setProperty("--mouse-x", `${x}px`);
+          card.style.setProperty("--mouse-y", `${y}px`);
+        }
+      };
+    }
+  }, [])
 
   return (
 

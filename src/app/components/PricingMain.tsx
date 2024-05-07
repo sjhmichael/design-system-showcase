@@ -230,10 +230,8 @@ function PricingMain() {
           <p className="text-slate-400">
             Have a different question and can't find the answer you're looking
             for? Contact us{" "}
-            <span className="font-medium text-yellow-500 hover:cursor-pointer">
-              here
-            </span>{" "}
-            and we'll get back to you as soon as we can.
+            <button className="font-medium text-yellow-500">here</button> and
+            we'll get back to you as soon as we can.
           </p>
           <FAQ />
         </div>

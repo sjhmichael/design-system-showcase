@@ -30,7 +30,7 @@ function Bento() {
         <div className="mt-24 grid max-w-[1000px] grid-rows-[auto_auto] gap-10 justify-center text-gray-100">
           {/* Bento Item 1 */}
           <div className="glass-container col-span-2">
-            <div className="bg-gray-950 flex flex-col md:flex-row rounded-lg overflow-hidden ">
+            <div className="bg-gray-950 flex flex-col md:flex-row rounded-lg overflow-hidden">
               <div className="relative p-6 flex flex-col md:justify-between md:p-12">
                 <FaReact size={40} className="hidden md:flex fill-[#73d0f0]" />
                 <div className="flex flex-col space-y-8">
@@ -45,7 +45,7 @@ function Bento() {
                 </div>
               </div>
               <Image
-                className="object-contain flex-shrink-0 w-full h-full md:translate-y-[64px] translate-y-0 translate-x-12 drop-shadow-lg"
+                className="object-contain flex-shrink-0 w-full h-full md:translate-y-[64px] translate-y-0 translate-x-12 drop-shadow-lg hover:scale-105 duration-300"
                 src={TypeScriptImage}
                 alt="typescript_image"
               />
@@ -57,10 +57,10 @@ function Bento() {
               <Image
                 src={ForDev}
                 alt="image"
-                className="absolute md:translate-x-20 translate-x-56 md:translate-y-12 translate-y-8 rounded-lg flex-shrink-0"
+                className="absolute md:translate-x-20 translate-x-56 md:translate-y-12 translate-y-8 rounded-lg flex-shrink-0 hover:scale-105 duration-300"
               />
             </div>
-            <div className="from-20% z-10 bg-gradient-to-t from-gray-950" />
+            <div className="from-20% z-10 bg-gradient-to-t from-gray-950 pointer-events-none" />
             <div className="flex flex-col space-y-8 p-6 text-gray-100 rounded-lg md:mt-72 mt-12 md:p-12 z-10">
               <h1 className="text-3xl font-medium">For Developers</h1>
               <p className="text-balance text-gray-400 max-w-[400px]">
@@ -80,10 +80,10 @@ function Bento() {
               <Image
                 src={ForDes}
                 alt="image"
-                className="absolute md:-translate-x-20 translate-x-56 md:translate-y-12 translate-y-8 rounded-lg flex-shrink-0"
+                className="absolute md:-translate-x-20 translate-x-56 md:translate-y-12 translate-y-8 rounded-lg flex-shrink-0 hover:scale-105 duration-300"
               />
             </div>
-            <div className="from-20% z-10 bg-gradient-to-t from-gray-950" />
+            <div className="from-20% z-10 bg-gradient-to-t from-gray-950 pointer-events-none" />
             <div className="flex flex-col space-y-8 p-6 text-gray-100 rounded-lg md:mt-72 mt-12 md:p-12 z-10">
               <h1 className="text-3xl font-medium">For Designers</h1>
               <p className="text-balance text-gray-400 max-w-[400px]">

@@ -9,6 +9,7 @@ import {
   FaAmazon,
   FaFigma,
   FaGoogle,
+  FaWandSparkles,
 } from "react-icons/fa6";
 
 function Main() {
@@ -17,15 +18,10 @@ function Main() {
       <div className="justify-center items-center flex md:pt-[200px] pt-[172px]">
         <div className="max-w-[1000px] flex flex-col text-center text-balance items-center space-y-8">
           <div className="flex flex-col lg:flex-row gap-y-2 lg:space-x-4 items-center space-x-0">
-            <div className="p-2 px-4 bg-green-500/20 rounded-full text-center">
-              <h1 className="text-green-200">
-                Free lifetime access to React Components
-              </h1>
-            </div>
-
-            <div className="p-2 px-4 bg-green-500/20 rounded-full">
-              <h1 className="text-green-200">
-                Free lifetime access to React Components
+            <div className="p-2 px-4 bg-slate-400/20 rounded-full flex items-center border-[1px] border-slate-700 gap-x-3">
+              <FaWandSparkles className="fill-gray-200" />
+              <h1 className="text-gray-200 text-sm">
+                AI Assistant features are now available
               </h1>
             </div>
           </div>

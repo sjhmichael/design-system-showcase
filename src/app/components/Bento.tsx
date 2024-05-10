@@ -5,6 +5,9 @@ import SmallScreen from "./../../../public/small-screenshot.png";
 import { FaReact, FaArrowRight } from "react-icons/fa";
 import ForDes from "./../../../public/ForDes.png";
 import ForDev from "./../../../public/ForDev.png";
+import Dark from "./../../../public/Dark.png";
+import Light from "./../../../public/Light.png";
+import { FaSun, FaMoon } from "react-icons/fa";
 
 function Bento() {
   return (
@@ -87,12 +90,48 @@ function Bento() {
             <div className="flex flex-col space-y-8 p-6 text-gray-100 rounded-lg md:mt-72 mt-12 md:p-12 z-10">
               <h1 className="text-3xl font-medium">For Designers</h1>
               <p className="text-balance text-gray-400 max-w-[400px]">
-                Clear guidelines on how to use Tetrisly, complete with best
+                Clear guidelines on how to use Atomic, complete with best
                 practices and usage rules.
               </p>
               <div className="w-fit group flex flex-row items-center space-x-4 font-medium hover:cursor-pointer">
                 <h1>Learn More</h1>
                 <FaArrowRight className="group-hover:translate-x-2 duration-300" />
+              </div>
+            </div>
+          </div>
+          {/* Bento Item 4 */}
+          <div className="glass-container col-span-2">
+            <div className="bg-gray-950 flex flex-row rounded-lg overflow-hidden">
+              <div className="md:hidden absolute w-full h-full bg-gradient-to-l from-gray-950 pointer-events-none z-10" />
+              <div className="relative p-6 flex flex-col md:justify-between justify-end md:p-12 z-20">
+                <div className="hidden md:flex flex-row gap-x-4">
+                  <FaMoon size={32} className="fill-gray-700" />
+                  <FaSun size={32} className="fill-gray-700" />
+                </div>
+                <div className="flex flex-col space-y-8">
+                  <h1 className="text-3xl font-medium">Dark/Light Modes</h1>
+                  <p className="text-gray-400 text-balance w-[300px]">
+                    Enhanced type safety, autocompletion, and IDE integration.
+                  </p>
+                  <div className="w-fit group flex flex-row items-center space-x-4 font-medium hover:cursor-pointer">
+                    <h1>Learn More</h1>
+                    <FaArrowRight className="group-hover:translate-x-2 duration-300" />
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row w-4/12 object-contain flex-shrink-0 drop-shadow-lg hover:scale-105 duration-300 rounded-lg -translate-x-32 md:translate-x-0 ">
+                <Image
+                  className="translate-y-8 md:translate-y-24"
+                  src={Dark}
+                  alt="Dark"
+                  quality={100}
+                />
+                <Image
+                  className="translate-y-8 md:-translate-y-24"
+                  src={Light}
+                  alt="Light"
+                  quality={100}
+                />
               </div>
             </div>
           </div>

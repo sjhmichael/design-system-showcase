@@ -46,6 +46,8 @@ function ServicesMain() {
     },
   ]
 
+
+  //useEffect to ensure objects get loaded in before executing "typeof"
   useEffect(() => {
     if (typeof window !== 'undefined') {
       document.getElementById("cards").onmousemove = (e) => {

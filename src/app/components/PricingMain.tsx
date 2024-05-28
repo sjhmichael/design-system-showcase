@@ -32,6 +32,7 @@ function PricingMain() {
             enhanced security controls, and additional features.
           </p>
         </div>
+
         <div className="grid lg:grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] gap-6 text-gray-100 mt-16 mb-16">
           <div className="p-8 border-2 flex justify-start flex-col rounded-3xl border-gray-800 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800">
             <h1 className="text-xl font-medium text-gray-100">Basic</h1>
@@ -159,7 +160,8 @@ function PricingMain() {
             </div>
           </div>
         </div>
-        <div className="grid md:grid-cols-[auto_auto] grid-rows-[auto_auto] text-gray-100 gap-12 mb-40">
+
+        <div className="grid md:grid-cols-[auto_auto] grid-rows-[auto_auto] text-gray-100 gap-12 mb-16">
           <div className="flex flex-col space-y-8">
             <Image src={TupleSVG} alt="logo" />
             <p className="text-balance">

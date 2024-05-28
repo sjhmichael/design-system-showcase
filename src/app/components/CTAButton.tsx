@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import React from "react";
 
-export default function ButtonLink({ label }: any) {
+export default function ButtonLink({ label }: { label: string }) {
   return (
     <Link
       href="/"

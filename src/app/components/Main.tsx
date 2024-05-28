@@ -58,21 +58,7 @@ function Main() {
       tl.fromTo(
         ".company__header",
         { y: 10 },
-        { y: 0, duration: 1.2, opacity: 1, stagger: 0.1 },
-        "-=0.8"
-      );
-
-      tl.fromTo(
-        ".company__icons",
-        { y: 20 },
-        {
-          y: 0,
-          duration: 1.2,
-          from: "center",
-          opacity: 1,
-          stagger: 0.1,
-          ease: "back.in",
-        },
+        { y: 0, duration: 1.2, opacity: 1 },
         "-=0.8"
       );
 
@@ -125,12 +111,12 @@ function Main() {
               Empowering teams at the world's leading companies.
             </h1>
             <div className="flex flex-row space-x-6">
-              <FaMicrosoft size={24} className="company__icons fill-gray-500" />
-              <FaMeta size={24} className="company__icons fill-gray-500" />
-              <FaXTwitter size={24} className="company__icons fill-gray-500" />
-              <FaAmazon size={24} className="company__icons fill-gray-500" />
-              <FaFigma size={24} className="company__icons fill-gray-500" />
-              <FaGoogle size={24} className="company__icons fill-gray-500" />
+              <FaMicrosoft size={24} className="fill-gray-500" />
+              <FaMeta size={24} className="fill-gray-500" />
+              <FaXTwitter size={24} className="fill-gray-500" />
+              <FaAmazon size={24} className="fill-gray-500" />
+              <FaFigma size={24} className="fill-gray-500" />
+              <FaGoogle size={24} className="fill-gray-500" />
             </div>
           </div>
 

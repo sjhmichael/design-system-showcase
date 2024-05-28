@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaCheck, FaGoogle } from "react-icons/fa6";
 import Image from "next/image";
@@ -21,20 +22,102 @@ import Koywe from "./../../../public/icons/koywe";
 import Lastro from "./../../../public/icons/lastro";
 import AppsIcon from "./../../../public/icons/AppsIcon";
 
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 function PricingMain() {
+  const container = useRef(null);
+  gsap.registerPlugin(useGSAP);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+
+      tl.fromTo(
+        ".hero__header",
+        { y: 20 },
+        { y: 0, opacity: 1, duration: 1.2 }
+      );
+
+      tl.fromTo(
+        ".hero__description",
+        { y: 20 },
+        { y: 0, opacity: 1, duration: 1.2 },
+        "-=0.8"
+      );
+
+      tl.fromTo(
+        ".plan__item",
+        { y: 50 },
+        {
+          duration: 1.3,
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          ease: "back.in",
+        },
+        "-=0.8"
+      );
+
+      tl.fromTo(
+        ".testimony",
+        { y: 20 },
+        { y: 0, opacity: 1, duration: 1.2 },
+        "-=0.8"
+      );
+
+      tl.fromTo(
+        ".faq",
+        { y: 50 },
+        {
+          duration: 1.3,
+          opacity: 1,
+          y: 0,
+          stagger: 0.1,
+          ease: "back.in",
+        },
+        "-=0.8"
+      );
+
+      gsap.fromTo(
+        ".company__name",
+        { y: 20 },
+        {
+          y: 0,
+          ease: "power2.inOut",
+          opacity: 1,
+          duration: 1.2,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: ".company__name",
+            toggleActions: "play pause resume reverse",
+          },
+        }
+      );
+    },
+    { scope: container }
+  );
+
   return (
-    <div className="w-full flex justify-center items-center px-8">
+    <div
+      className="w-full flex justify-center items-center px-8"
+      ref={container}
+    >
       <div className="max-w-[1000px] flex flex-col justify-center md:pt-[200px] pt-[172px]">
         <div className="items-center flex flex-col space-y-8 text-center">
-          <h1 className="text-gray-100 text-5xl font-medium">Pricing</h1>
-          <p className="text-slate-400 text-balance">
+          <h1 className="hero__header text-gray-100 text-5xl font-medium opacity-0">
+            Pricing
+          </h1>
+          <p className="hero__description text-slate-400 text-balance opacity-0">
             Choose your Atomic Design plan. Upgrade to enable unlimited issues,
             enhanced security controls, and additional features.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-[auto_auto_auto] grid-rows-[auto_auto_auto] gap-6 text-gray-100 mt-16 mb-16">
-          <div className="p-8 border-2 flex justify-start flex-col rounded-3xl border-gray-800 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800">
+          <div className="plan__item p-8 border-2 flex justify-start flex-col rounded-3xl border-gray-800 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800 opacity-0">
             <h1 className="text-xl font-medium text-gray-100">Basic</h1>
             <p className="text-sm text-slate-400">
               The essentials to provide your best work for clients.
@@ -70,7 +153,7 @@ function PricingMain() {
               </button>
             </div>
           </div>
-          <div className="p-8 border-2 flex justify-start flex-col rounded-3xl border-yellow-500 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800">
+          <div className="plan__item p-8 border-2 flex justify-start flex-col rounded-3xl border-yellow-500 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800 opacity-0">
             <div className="flex flex-row items-center justify-between">
               <h1 className="text-xl font-medium text-gray-100">Standard</h1>
               <h1 className="bg-yellow-500 text-gray-900 p-1 px-2 rounded-full text-sm font-medium">
@@ -115,7 +198,7 @@ function PricingMain() {
               </button>
             </div>
           </div>
-          <div className="p-8 border-2 flex justify-start flex-col rounded-3xl border-gray-800 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800">
+          <div className="plan__item p-8 border-2 flex justify-start flex-col rounded-3xl border-gray-800 text-balance space-y-6 bg-gradient-to-t from-gray-950/50 to-gray-800/50 hover:bg-gradient-to-t hover:from-gray-950 hover:to-gray-800 opacity-0">
             <h1 className="text-xl font-medium text-gray-100">Professional</h1>
             <p className="text-sm text-slate-400">
               A plan that scales with your rapidly growing business.
@@ -161,7 +244,7 @@ function PricingMain() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-[auto_auto] grid-rows-[auto_auto] text-gray-100 gap-12 mb-16">
+        <div className="testimony grid md:grid-cols-[auto_auto] grid-rows-[auto_auto] text-gray-100 gap-12 mb-16 opacity-0">
           <div className="flex flex-col space-y-8">
             <Image src={TupleSVG} alt="logo" />
             <p className="text-balance">
@@ -210,24 +293,24 @@ function PricingMain() {
             Trusted By the world's leading companies
           </h1>
           <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 shrink-0 gap-8 items-center place-items-center">
-            <Reform className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
-            <Booth className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
-            <Infisical className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
-            <Vercel className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
-            <div className="flex justify-start w-40">
+            <Reform className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
+            <Booth className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
+            <Infisical className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
+            <Vercel className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
+            <div className="company__name flex justify-start w-40 opacity-0">
               <Tuple className="w-32 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
             </div>
-            <Koywe className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
-            <Warp className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
-            <div className="flex justify-start w-40">
-              <Lastro className="w-32 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <Koywe className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
+            <Warp className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
+            <div className="company__name flex justify-start w-40 opacity-0">
+              <Lastro className="company__name w-32 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
             </div>
-            <Totvs className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
-            <Sameday className="w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300" />
+            <Totvs className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
+            <Sameday className="company__name w-40 shrink-0 fill-gray-600 hover:fill-slate-100 duration-300 opacity-0" />
           </div>
         </div>
 
-        <div className="flex flex-col space-y-8 text-gray-100 text-center mb-16">
+        <div className="faq flex flex-col space-y-8 text-gray-100 text-center mb-16 opacity-0">
           <h1 className="text-5xl font-medium">FAQs</h1>
           <p className="text-slate-400">
             Have a different question and can't find the answer you're looking

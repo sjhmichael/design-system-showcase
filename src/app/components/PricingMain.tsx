@@ -29,7 +29,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function PricingMain() {
   const container = useRef(null);
-  gsap.registerPlugin(useGSAP);
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
 
   useGSAP(
     () => {
@@ -86,10 +86,14 @@ function PricingMain() {
         { y: 20 },
         {
           y: 0,
-          ease: "power2.inOut",
+          ease: "power1.in",
           opacity: 1,
-          duration: 1.2,
-          stagger: 0.2,
+          duration: 0.3,
+          stagger: {
+            grid: [2, 5],
+            from: "random",
+            amount: 1.5,
+          },
           scrollTrigger: {
             trigger: ".company__name",
             toggleActions: "play pause resume reverse",

@@ -7,20 +7,19 @@ import FAQ from "./FAQ";
 import Tuple from "./../../../public/icons/tuple-logo-white";
 import TupleSVG from "./../../../public/icons/tuple-logo-white.svg";
 import ReformSVG from "./../../../public/icons/reform-logo-white.svg";
-import Rework from "./../../../public/icons/reworkd";
+
 import Sameday from "./../../../public/icons/sameday";
 import Totvs from "./../../../public/icons/totvs";
-import WarnerBros from "./../../../public/icons/warner-bros";
+
 import Vercel from "./../../../public/icons/vercel";
 import Reform from "./../../../public/icons/reform-logo-white";
 import Booth from "./../../../public/icons/booth";
 import Infisical from "../../../public/icons/infisical";
-import Forbes from "./../../../public/icons/forbes";
+
 import Warp from "./../../../public/icons/warp";
-import Voahoteis from "./../../../public/icons/voahoteis";
+
 import Koywe from "./../../../public/icons/koywe";
 import Lastro from "./../../../public/icons/lastro";
-import AppsIcon from "./../../../public/icons/AppsIcon";
 
 import { useRef } from "react";
 import gsap from "gsap";

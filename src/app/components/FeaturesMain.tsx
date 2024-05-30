@@ -1,18 +1,54 @@
+"use client";
+
 import React from "react";
 import CTAButton from "./CTAButton";
 import Image from "next/image";
-import TypeScript from "./../../../public/TypeScript.png";
-import ExampleImage from "./../../../public/ExampleImage.png";
 import Features from "./../../../public/Features.png";
 import Dashboard from "./../../../public/Dashboard.png";
 import { FaFlask, FaMagnifyingGlass, FaImage, FaFilter } from "react-icons/fa6";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 
 function FeaturesMain() {
+  const container = useRef(null);
+  gsap.registerPlugin(useGSAP);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+
+      tl.fromTo(
+        ".features__main",
+        { y: 20 },
+        { y: 0, opacity: 1, duration: 1.2 }
+      );
+
+      tl.fromTo(
+        ".features__productresearch",
+        { y: 20 },
+        { y: 0, opacity: 1, duration: 1.2 },
+        "-=0.8"
+      );
+
+      tl.fromTo(
+        ".features__competitorresearch",
+        { y: 20 },
+        { y: 0, opacity: 1, duration: 1.2 },
+        "-=0.8"
+      );
+    },
+    { scope: container }
+  );
+
   return (
-    <div className="relative w-full px-8 justify-center flex mb-24">
+    <div
+      className="relative w-full px-8 justify-center flex mb-24"
+      ref={container}
+    >
       <div className="text-gray-100 items-center max-w-[1000px] md:pt-[200px] pt-[172px]">
         {/* Features */}
-        <div className="flex md:flex-row flex-col items-center">
+        <div className="features__main features flex md:flex-row flex-col items-center opacity-0">
           <div className="text-slate-400 flex flex-col space-y-8 mb-12 basis-full pr-8">
             <h1 className="text-5xl text-gray-100 font-medium">Features</h1>
             <p className="text-balance">
@@ -36,7 +72,7 @@ function FeaturesMain() {
 
         {/* Border */}
 
-        <div>
+        <div className="features__productresearch opacity-0">
           <div className="flex flex-row items-center space-x-4 mt-40">
             <h1 className="text-5xl text-gray-100 font-medium">
               Product Research
@@ -106,7 +142,7 @@ function FeaturesMain() {
           </div>
         </div>
 
-        <div>
+        <div className="features__productresearch opacity-0">
           <div className="flex flex-row items-center space-x-4 mt-40">
             <h1 className="text-5xl text-gray-100 font-medium">
               Competitor Research

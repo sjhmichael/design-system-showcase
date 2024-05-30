@@ -4,8 +4,41 @@ import React, { useEffect } from "react";
 import FAQ from "./FAQ";
 import AppsIcon from "../../../public/icons/AppsIcon";
 import LightningIcon from "../../../public/icons/LightningIcon";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 
 function ServicesMain() {
+
+  const container = useRef(null);
+  gsap.registerPlugin(useGSAP);
+
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({ defaults: { ease: "power2.inOut" } });
+
+      tl.fromTo(
+        ".services__feedbackform",
+        { y: 0 },
+        { y: -20, opacity: 1, duration: 1.2 },
+      );
+
+      tl.fromTo(
+        ".services__features",
+        { y: 0 },
+        { y: -20, opacity: 1, duration: 1.2 },
+        "-=0.8"
+      );
+
+      tl.fromTo(
+        ".card__item",
+        { opacity: 0 },
+        { opacity: 1, duration: 0.8, stagger: { from: "random", amount: 1.5 } },
+        "-=0.8"
+      );
+    },
+    { scope: container }
+  );
 
   const cardContent = [
     {
@@ -64,11 +97,13 @@ function ServicesMain() {
   }, [])
 
   return (
-    <div className="w-full px-8 flex justify-center">
+    <div className="w-full px-8 flex justify-center" ref={container}>
+
       <div className="max-w-[1000px] flex flex-col justify-center md:pt-[200px] pt-[172px]">
-        <div className="flex md:flex-row text-gray-100 items-center mb-32 flex-col">
+
+        <div className="services__feedbackform flex md:flex-row text-gray-100 items-center mb-32 flex-col opacity-0">
           <div className="flex flex-col basis-full text-balance space-y-8 mb-8">
-            <h1 className="p-2 px-6 border-[1px] rounded-full text-lg border-gray-800 w-fit">Enterprise</h1>
+            <h1 className="p-2 px-6 border-[1px] border-blue-500 rounded-full text-lg w-fit">Enterprise</h1>
             <h1 className="text-5xl font-medium">Have a chat with us!</h1>
             <p className="text-slate-400">
               It doesn't matter if you send millions or hundreds of emails every
@@ -96,8 +131,9 @@ function ServicesMain() {
             <button className="p-3 rounded-lg bg-slate-800 hover:bg-slate-700 duration-300">Submit</button>
           </div>
         </div>
+
         <div className="flex flex-col justify-center text-gray-100 mb-24">
-          <div className="flex flex-col justify-center space-y-8 mb-16">
+          <div className="services__features flex flex-col justify-center space-y-8 mb-16 opacity-0">
             <h1 className="font-medium text-5xl text-center">
               What can we do for you?
             </h1>
@@ -107,10 +143,11 @@ function ServicesMain() {
               development stage.
             </p>
           </div>
+
           <div id="cards">
             {cardContent.map(({ header, description, icon, index }) => (
               <React.Fragment key={index}>
-                <div class="card">
+                <div class="card__item card opacity-0">
                   <div class="card-border" />
                   <div class="card-content justify-center">
                     <div className="flex flex-col px-8 text-center gap-y-4 items-center">
@@ -126,10 +163,12 @@ function ServicesMain() {
             ))}
           </div>
         </div>
+
         <div className="flex flex-col space-y-8 text-gray-100 text-center mb-16">
           <h1 className="text-5xl font-medium">FAQs</h1>
           <FAQ />
         </div>
+
       </div>
     </div>
   );

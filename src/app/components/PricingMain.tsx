@@ -7,17 +7,13 @@ import FAQ from "./FAQ";
 import Tuple from "./../../../public/icons/tuple-logo-white";
 import TupleSVG from "./../../../public/icons/tuple-logo-white.svg";
 import ReformSVG from "./../../../public/icons/reform-logo-white.svg";
-
 import Sameday from "./../../../public/icons/sameday";
 import Totvs from "./../../../public/icons/totvs";
-
 import Vercel from "./../../../public/icons/vercel";
 import Reform from "./../../../public/icons/reform-logo-white";
 import Booth from "./../../../public/icons/booth";
 import Infisical from "../../../public/icons/infisical";
-
 import Warp from "./../../../public/icons/warp";
-
 import Koywe from "./../../../public/icons/koywe";
 import Lastro from "./../../../public/icons/lastro";
 
